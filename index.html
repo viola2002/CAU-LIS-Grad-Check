@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>coding</title>
+    <title>CAU LIS_GRAD CHECK</title>
   </head>
   <body>
-    <img src="matrix-356024_1920.jpg" alt="">
+    <img src="" alt="">
+    <h1>중앙대 문헌정보학과<br>졸업요건 체크리스트</h1>
     <h2>How to use</h2>
     <ol>
       <li><a href="https://mportal.cau.ac.kr/main.do" target="_blank" title="중앙대학교 포탈로 이동합니다">중앙대포탈</a></li>
@@ -13,43 +14,177 @@
       <li>확인 후 학과사무실에 연락하세요</li>
     </ol>
     <table border="solid">
+      <caption>기본 정보</caption><button>Ver.</button>
       <tr>
         <th>입학 연도</th>
         <th>다전공</th>
       </tr>
       <tr>
-        <td>2021</td>
-        <td>전공심화</td>
+        <td>
+          <select class="">
+            <option value="">--</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+          </select>
+        </td>
+        <td>
+          <select class="">
+            <option value="">--</option>
+            <option value="">전공심화</option>
+            <option value="">복수전공</option>
+            <option value="">융합전공</option>
+            <option value="">연계전공</option>
+            <option value="">자기설계전공</option>
+            <option value="">부전공</option>
+          </select>
+        </td>
       </tr>
     <br>
     </table>
     <table border="solid">
-      <caption>교양영역</caption>
+      <caption>교양 영역</caption><button>세부 기준</button>
+
       <tr>
-        <th colspan="2">이수구분</th>
-        <th>최소학점</th>
-        <th>최대학점</th>
-        <th>이수학점</th>
+        <th colspan="2">이수 구분</th>
+        <th>최소 학점</th>
+        <th>최대 학점</th>
+        <th colspan="2">이수 학점</th>
       </tr>
+
       <tr>
         <th rowspan="3">공통교양</th>
         <th>국어</th>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>
+          <input type="text" name="" value="2" readonly>
+        </td>
+        <td>
+          <input type="text" name="" value="2" readonly>
+        </td>
+        <td colspan="2">
+          <select class="" id="kor-credit">
+            <option value="0">0</option>
+            <option value="2">2</option>
+          </select>
+          <label for="kor-credit"></label>
+        </td>
       </tr>
+
       <tr>
         <th>영어</th>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>
+          <input type="text" name="" value="2" readonly>
+        </td>
+        <td>
+          <input type="text" name="" value="2" readonly>
+        </td>
+        <td colspan="2">
+          <select class="" id="eng-credit">
+            <option value="0">0</option>
+            <option value="2">2</option>
+          </select>
+          <label for="eng-credit"></label>
+          <input type="checkbox" id="eng-check"><label for="eng-check">면제</label>
+        </td>
       </tr>
+
       <tr>
         <th>기타</th>
+        <td>
+          <input type="text" name="" value="10" readonly>
+        </td>
+        <td>
+          <input type="text" name="" value="10" readonly>
+        </td>
+        <td colspan="2">
+          <select class="" id="other-credit">
+            <option value="0">0</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+          </select>
+          <label for="other-credit"></label>
+          <input type="checkbox" id="other-check"><label for="other-check">회계학원론 이수</label>
+        </td>
+      </tr>
+
+      <tr>
+        <th colspan="2" rowspan="5">핵심교양</th>
+        <td rowspan="5">
+          <input type="text" name="" value="14" readonly>
+        </td>
+        <td rowspan="5"></td>
+        <td>
+          <input type="checkbox" id="core1" value=""><label for="core1">도전</label>
+        </td>
+        <td rowspan="5">
+          <input type="number" id="core" value=""><label for="core">학점</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="checkbox" id="core2" value=""><label for="core2">창의</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="checkbox" id="core3" value=""><label for="core3">융합</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="checkbox" id="core4" value=""><label for="core4">신뢰</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="checkbox" id="core5" value=""><label for="core5">소통</label>
+        </td>
+      </tr>
+
+      <tr>
+        <th colspan="2">선택교양</th>
+        <td>
+          <input type="text" name="" value="0" readonly>
+        </td>
         <td></td>
-        <td></td>
-        <td></td>
+        <td colspan="2">
+          <input type="number" id="choice" value=""><label for="choice">학점</label>
+        </td>
+      </tr>
+
+      <tr>
+        <th colspan="2">합계</th>
+        <td>
+          <input type="text" name="" value="28" readonly>
+        </td>
+        <td>
+          <input type="text" name="" value="45" readonly>
+        </td>
+        <td colspan="2">
+          <input type="text" id="sum" value="" readonly><label for="sum">학점</label>
+        </td>
       </tr>
     </table>
+
+    <br>
+    <input type="reset" name="" value="reset">
+    <input type="button" name="" value="check">
+    <br>
+    <br>
+
+    <a href="tel:02-820-6633">
+    <span>다빈치교양대학</span>
+    <br>
+    <span>02-820-6633</span>
+    </a>
+
   </body>
 </html>
