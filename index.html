@@ -4,85 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>CAU LIS_GRAD CHECK</title>
-  <style>
-    body {
-      background-color: rgb(33, 85, 164);
-      color: white;
-      margin-left: 20%;
-      margin-right: 20%;
-    }
-
-    img {
-      width: 100px;
-      height: auto;
-    }
-
-    h1 {
-      font-size: 30px;
-    }
-
-    ol {
-      list-style: none;
-    }
-
-    a {
-      color: white;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    caption {
-      text-align: left;
-    }
-
-    th,
-    td {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    th {
-      border-color: white;
-    }
-
-    td {
-      text-align: center;
-      color: black;
-      background: white;
-    }
-
-    input[type=text] {
-      border: none;
-      text-align: center;
-    }
-
-    input[type=number] {
-      text-align: center;
-      width: 50px;
-      height: 30px;
-    }
-
-    select {
-      width: 50px;
-      height: 30px;
-    }
-
-    .header {
-      text-align: center;
-    }
-
-    .caplogo {
-      width: auto;
-      height: 20px;
-    }
-
-    .infoselect {
-      width: 80px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Roboto+Condensed&family=Sunflower:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -91,15 +16,15 @@
     <h1>중앙대 문헌정보학과<br>졸업요건 체크리스트</h1>
     <h2>How to use</h2>
     <ol>
-      <li><a href="https://mportal.cau.ac.kr/main.do" target="_blank" title="중앙대학교 포탈로 이동합니다">중앙대포탈</a> - 강의마당 - 졸업관련 성적조회</li>
-      <li>수강학점을 정확히 입력하세요</li>
-      <li>확인 후 학과사무실에 연락하세요</li>
+      <li><a href="https://mportal.cau.ac.kr/main.do" target="_blank" title="중앙대학교 포탈로 이동합니다."><u>중앙대포탈</u></a> - 강의마당 - 졸업관련 성적조회</li>
+      <li>수강학점을 정확히 입력하세요.</li>
+      <li>확인 후 학과사무실에 연락하세요.</li>
     </ol>
   </div>
 
 
   <table border="solid">
-    <caption><img src="logo.png" alt="" class="caplogo"> 기본 정보</caption><button>Ver.</button>
+    <caption><img src="logo.png" alt="" class="caplogo"> 기본 정보</caption>
     <tr>
       <th width="50%">입학 연도</th>
       <th>다전공</th>
@@ -130,7 +55,7 @@
 
 
   <table border="solid">
-    <caption><img src="logo.png" alt="" class="caplogo"> 교양 영역</caption><button>세부 기준</button>
+    <caption><img src="logo.png" alt="" class="caplogo"> 교양 영역</caption>
 
     <tr>
       <th colspan="2">이수 구분</th>
@@ -143,10 +68,10 @@
       <th rowspan="3">공통교양</th>
       <th>국어</th>
       <td>
-        <input type="text" name="" value="2" readonly>
+        <input type="text" value="2" readonly>
       </td>
       <td>
-        <input type="text" name="" value="2" readonly>
+        <input type="text" value="2" readonly>
       </td>
       <td colspan="2">
         <select class="" id="kor-credit">
@@ -160,10 +85,10 @@
     <tr>
       <th>영어</th>
       <td>
-        <input type="text" name="" value="2" readonly>
+        <input type="text" value="2" readonly>
       </td>
       <td>
-        <input type="text" name="" value="2" readonly>
+        <input type="text" value="2" readonly>
       </td>
       <td colspan="2">
         <select class="" id="eng-credit">
@@ -178,10 +103,10 @@
     <tr>
       <th>기타</th>
       <td>
-        <input type="text" name="" value="10" readonly>
+        <input type="text" value="10" readonly>
       </td>
       <td>
-        <input type="text" name="" value="10" readonly>
+        <input type="text" value="10" readonly>
       </td>
       <td colspan="2">
         <select class="" id="other-credit">
@@ -200,7 +125,7 @@
     <tr>
       <th colspan="2" rowspan="5">핵심교양</th>
       <td rowspan="5">
-        <input type="text" name="" value="14" readonly>
+        <input type="text" value="14" readonly>
       </td>
       <td rowspan="5"></td>
       <td>
@@ -238,7 +163,7 @@
     <tr>
       <th colspan="2">선택교양</th>
       <td>
-        <input type="text" name="" value="0" readonly>
+        <input type="text" value="0" readonly>
       </td>
       <td></td>
       <td colspan="2">
@@ -249,33 +174,36 @@
     <tr>
       <th colspan="2">합계</th>
       <td>
-        <input type="text" name="" value="28" readonly>
+        <input type="text" value="28" readonly>
       </td>
       <td>
-        <input type="text" name="" value="45" readonly>
+        <input type="text" value="45" readonly>
       </td>
       <td colspan="2">
-        <input type="text" id="sum" value="" readonly><label for="sum">학점</label>
+        <input type="text" id="sum" value="0" style="color:red;" readonly><label for="sum">학점</label>
       </td>
     </tr>
   </table>
 
   <br>
-  <input type="reset" name="" value="reset">
-  <input type="button" name="" value="check">
-  <br>
-  <br>
+  <div class="btns">
+    <input type="reset" value="RESET">
+    <input type="button" value="CHECK">
+  </div>
 
-  <a href="tel:02-820-6633">
-    <span>다빈치교양대학</span>
-    <br>
-    <span>02-820-6633</span>
-  </a>
+
+  <div class="call">
+    <a href="tel:02-820-6633">
+      <span>다빈치교양대학</span>
+      <br>
+      <span>02-820-6633</span>
+    </a>
+  </div>
 
 
   <br>
   <table border="solid">
-    <caption><img src="logo.png" alt="" class="caplogo"> 전공 영역</caption><button>세부 기준</button>
+    <caption><img src="logo.png" alt="" class="caplogo"> 전공 영역</caption>
 
     <tr>
       <th>이수 구분</th>
@@ -286,7 +214,7 @@
     <tr>
       <th>전공기초</th>
       <td>
-        <input type="text" name="" value="12" readonly>
+        <input type="text" value="12" readonly>
       </td>
       <td>
         <input type="number" id="maj-basic" value="" placeholder="0" min="0"><label for="maj-basic">학점</label>
@@ -296,7 +224,7 @@
     <tr>
       <th>전공필수</th>
       <td>
-        <input type="text" name="" value="18" readonly>
+        <input type="text" value="15" readonly>
       </td>
       <td>
         <input type="number" id="maj-required" value="" placeholder="0" min="0"><label for="maj-required">학점</label>
@@ -306,7 +234,7 @@
     <tr>
       <th>전공</th>
       <td>
-        <input type="text" id="maj-credit" value="66" readonly>
+        <input type="text" id="maj-credit" value="45" readonly>
         <br>
         <label for="maj-credit">(전필 포함)</label>
       </td>
@@ -318,7 +246,9 @@
     <tr>
       <th>부전공</th>
       <td>
-        <input type="text" name="" value="21" readonly>
+        <input type="text" value="21" readonly>
+        <br>
+        <label for="maj-credit">(전공필수 6학점 이상 포함)</label>
       </td>
       <td>
         <input type="number" id="minor" value="" placeholder="0" min="0"><label for="minor">학점</label>
@@ -329,7 +259,7 @@
     <tr>
       <th>자유선택</th>
       <td>
-        <input type="text" name="" value="1" readonly>
+        <input type="text" value="1" readonly>
       </td>
       <td>
         <input type="number" id="freechoice" value="" placeholder="0" min="0"><label for="freechoice">학점</label>
@@ -340,7 +270,7 @@
     <tr>
       <th>교직</th>
       <td>
-        <input type="text" name="" value="22" readonly>
+        <input type="text" value="22" readonly>
       </td>
       <td>
         <input type="number" id="teaching" value="" placeholder="0" min="0"><label for="teaching">학점</label>
@@ -351,28 +281,30 @@
     <tr>
       <th>총 학점</th>
       <td>
-        <input type="text" name="" value="132" readonly>
+        <input type="text" value="132" readonly>
       </td>
       <td>
-        <input type="text" id="total" value="" readonly><label for="total">학점</label>
+        <input type="text" id="total" value="0" style="color:red;" readonly><label for="total">학점</label>
       </td>
     </tr>
   </table>
 
   <br>
-  <span>정확한 졸업사정 결과와 학과별 자체 졸업요건, 공학인증은<br>아래 학과 전화번호로 연락하여 반드시 확인하시기 바랍니다!</span>
+  <span>정확한 졸업사정 결과는<br>아래 학과 전화번호로 연락하여 반드시 확인하시기 바랍니다!</span>
 
   <br>
-  <input type="reset" name="" value="reset">
-  <input type="button" name="" value="check">
-  <br>
-  <br>
+  <div class="btns">
+    <input type="reset" value="RESET">
+    <input type="button" value="CHECK">
+  </div>
 
-  <a href="tel:02-820-5144">
-    <span>문헌정보학과</span>
-    <br>
-    <span>02-820-5144</span>
-  </a>
+  <div class="call">
+    <a href="tel:02-820-5144">
+      <span>문헌정보학과</span>
+      <br>
+      <span>02-820-5144</span>
+    </a>
+  </div>
 
 
   <table border="solid">
@@ -436,8 +368,10 @@
   </table>
 
   <br>
-  <input type="reset" name="" value="reset">
-  <input type="button" name="" value="check">
+  <div class="btns">
+    <input type="reset" value="RESET">
+    <input type="button" value="CHECK">
+  </div>
 
 </body>
 

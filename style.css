@@ -1,0 +1,151 @@
+body {
+  font-family: 'Jua', sans-serif;
+  color: white;
+  background-color: rgb(33, 85, 164);
+  text-align: center;
+  min-width: 15rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 1rem;
+}
+
+img {
+  width: 6rem;
+  height: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1rem
+}
+
+caption {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+th, td {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+th {
+  font-size: 1.5rem;
+  border-color: white;
+}
+
+td {
+  font-family: 'Sunflower', sans-serif;
+  color: black;
+  background: white;
+  text-align: center;
+}
+
+input[type=text] {
+  font-family: 'Jua', sans-serif;
+  font-size: 1.5rem;
+  color: blue;
+  text-align: center;
+  width: 4.5rem;
+  height: 2.5rem;
+  border: none;
+}
+
+input[type=number], select {
+  font-family: 'Jua', sans-serif;
+  font-size: 1.5rem;
+  color: red;
+  width: 4.5rem;
+  height: 2.5rem;
+}
+
+input[type=number] {
+  text-align: center;
+}
+
+input[type=reset], input[type=button] {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  width: 7rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 1.2rem;
+  margin: 2.5rem;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: #DD0000;
+}
+
+input[type=reset]:hover {
+  color: #DD0000;
+  background-color: white;
+}
+
+input[type=button] {
+  background-color: #009900;
+}
+
+input[type=button]:hover {
+  color: #009900;
+  background-color: white;
+}
+
+select {
+  text-align-last: center;
+}
+
+.header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.caplogo {
+  width: auto;
+  height: 1.5rem;
+}
+
+.infoselect {
+  color: black;
+  width: 9rem;
+}
+
+.btns {
+  text-align: center;
+}
+
+.call {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (orientation: portrait) {
+  body {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+}
