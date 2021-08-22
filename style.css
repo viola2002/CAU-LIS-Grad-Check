@@ -143,6 +143,10 @@ select {
   text-align: center;
 }
 
+#about {
+  cursor: pointer;
+}
+
 @media (orientation: portrait) {
   body {
     margin-left: 0.2rem;
